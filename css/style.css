@@ -1,0 +1,284 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+:root {
+    --top-header-bg: #fef7f6;
+    --bs-mfont-size: 12px;
+    --btn-custom: #ff5353;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-text {
+    font-size: var(--bs-mfont-size);
+}
+
+.top-header a {
+
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.icon-item {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+    position: relative;
+    padding: 8px;
+}
+
+.item-count {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+.banner {
+    height: 600px;
+    background-image: url(https://demo.themeies.com/silon/images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.header-sticky {
+    -webkit-box-shadow: 0px 9px 12px 0px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 9px 12px 0px rgba(199,199,199,1);
+    box-shadow: 0px 9px 12px 0px rgba(199,199,199,1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+
+.btn-custom {
+    background-color: var(--btn-custom);
+    width: 170px;
+    padding: 10px 5px;
+    color: white;
+    transition: all ease 0.5s;
+
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: blue;
+
+}
+
+
+.product-item {
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        --webkit-transform: translateY(30px);
+        transform: translateY(30px);
+
+    }
+
+    to {
+        --webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.product-item:hover .icons-nav {
+    opacity: 1;
+}
+
+.product-item:hover .icons-nav a:first-child {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+
+}
+
+.product-item:hover .icons-nav a:nth-child(2) {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+
+
+
+}
+
+
+.product-item:hover .icons-nav a:last-child {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+
+}
+
+.icons-nav {
+    position: absolute;
+    bottom: 180px;
+    left: 28%;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+
+
+.icons-nav a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 3em;
+    font-size: 18px;
+    background-color: white;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    text-decoration: none;
+
+
+    transition: all 300ms ease;
+    /* transform: translateY(-50%); */
+
+}
+
+.text-danger {
+    color: var(--btn-custom);
+}
+
+.icons-nav a:hover {
+
+    background-color: var(--btn-custom);
+    color: white;
+}
+
+
+.figure-caption {
+    color: #888;
+    cursor: pointer;
+}
+
+.figure-caption:hover {
+
+    color: var(--btn-custom);
+}
+
+
+/* Lecture 13*/
+
+
+.alert-success{
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 35px;
+    z-index: 100;
+    width: 400px;
+    text-align: center;
+    display: none;
+}
+
+.discount-section{
+    height: 559px;
+    background-color: #eae2d8;
+}
+
+
+.figure img{
+    height: 383px;
+}
+
+a:hover{
+    color: var(--btn-custom);
+}
+.post-date{
+    color: gray;
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 7px;
+}
+
+.post-date::before{
+    width: 15px;
+    height: 6px;
+    background-color: var(--btn-custom);
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 5px;
+}
+
+.post-title{
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+.post-title:hover{
+    color: var(--btn-custom) !important;
+}
+
+.post-info{
+    margin-top: 30px;
+}
+
+.post-info a{
+    
+    color: #888 !important;
+}
+
+.follow-us img{
+    height: auto !important;
+}
+
+.overlay-parent{
+    width:262px;
+    height:250px;
+    position: relative;
+    padding: 0;
+}
+
+.overlay-parent:hover .overlay-content{
+    display: block;
+}
+
+.overlay-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 20, 20, 0.431);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay-content i{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 35px;
+    color: white;
+
+}
